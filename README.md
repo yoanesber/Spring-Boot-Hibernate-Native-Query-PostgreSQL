@@ -94,7 +94,9 @@ CREATE TABLE netflix.netflix_shows (
 ## 🛠 Installation & Setup
 A step by step series of examples that tell you how to get a development env running.
 1. Clone the repository
-- git clone https://github.com/yoanesber/Spring-Boot-Hibernate-Native-Query-PostgreSQL.git
+```bash
+git clone https://github.com/yoanesber/Spring-Boot-Hibernate-Native-Query-PostgreSQL.git
+```
 
 2. Set up PostgreSQL
 - Run the PostgreSQL database and ensure the schema is set up
