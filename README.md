@@ -7,7 +7,6 @@ This project is **a RESTful API** built using `Spring Boot v3.4.2` that manages 
 
 ---
 
-
 ## ✨Tech Stack
 The technology used in this project are:
 - `Spring Boot 3.4.2` : Framework for building RESTful APIs
@@ -19,11 +18,16 @@ The technology used in this project are:
 
 ## 📋 Project Structure
 The project is organized into the following package structure:
-- `controller` : Exposes REST API endpoints for handling requests and responses
-- `dto` : Data Transfer Objects (DTOs) for request/response payloads
-- `entity` : Entity classes representing database tables
-- `repository` : JPA repositories for database access
-- `service` : Business logic layer, separating service interfaces and their implementations
+```bash
+native-query-postgresql/
+│── src/main/java/com/yoanesber/spring/hibernate/native_query_postgresql/
+│   ├── controller/            # Exposes REST API endpoints for handling requests and responses
+│   ├── dto/                   # Data Transfer Objects (DTOs) for request/response payloads
+│   ├── entity/                # Entity classes representing database tables
+│   ├── repository/            # JPA repositories for database access
+│   ├── service/               # Business logic layer
+│   │   ├── impl/              # Implementation of services
+```
 ---
 
 ## 📂 Environment Configuration
@@ -91,9 +95,11 @@ CREATE TABLE netflix.netflix_shows (
 A step by step series of examples that tell you how to get a development env running.
 1. Clone the repository
 - git clone https://github.com/yoanesber/Spring-Boot-Hibernate-Native-Query-PostgreSQL.git
+
 2. Set up PostgreSQL
 - Run the PostgreSQL database and ensure the schema is set up
 - Configure the PostgreSQL database connection in application.properties
+
 3. Run the application locally
 - Make sure PostgreSQL is running, then execute: 
 ```bash
